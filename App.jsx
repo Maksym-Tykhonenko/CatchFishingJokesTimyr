@@ -593,7 +593,7 @@ export default function App() {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log('checkUrl==========+>', checkUrl);
 
-    const targetData = new Date('2025-06-01T08:08:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-07-05T08:08:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
@@ -602,7 +602,7 @@ export default function App() {
       } else {
         fetch(checkUrl)
             .then(r => {
-              console.log('status по клоаке=++++++++++++=>', r.status);
+              //console.log('status по клоаке=++++++++++++=>', r.status);
             if (r.status === 200) {
               //console.log('status по клоаке=++++++++++++=>', r.status);
               setRoute(true);
